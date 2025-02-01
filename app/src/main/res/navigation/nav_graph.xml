@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_counter">
+
+    <fragment
+        android:id="@+id/nav_counter"
+        android:name="com.example.navigationcomponent.CounterFragment"
+        android:label="Counter"
+        tools:layout="@layout/fragment_counter" />
+
+    <fragment
+        android:id="@+id/nav_other"
+        android:name="com.example.navigationcomponent.OtherFragment"
+        android:label="Other"
+        tools:layout="@layout/fragment_other" />
+</navigation>
