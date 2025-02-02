@@ -6,15 +6,37 @@
     android:gravity="center">
 
     <TextView
-        android:id="@+id/counter_text"
+        android:id="@+id/nav_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Bonus point"
         android:textSize="24sp"
-        android:text="0" />
-
-    <Button
-        android:id="@+id/button_increment"
-        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Increase Counter" />
-</LinearLayout>
+        android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/button_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Increase"/>
+        <TextView
+            android:id="@+id/counter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="24sp"
+            android:text="0" />
+        <Button
+            android:id="@+id/button_decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease"
+            android:textSize="16sp"/>
+
+    </LinearLayout>

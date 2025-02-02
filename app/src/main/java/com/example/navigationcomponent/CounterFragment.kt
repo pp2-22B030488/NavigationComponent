@@ -12,6 +12,7 @@ class CounterFragment : Fragment() {
     private var counter = 0
     private lateinit var counterText: TextView
     private lateinit var incrementButton: Button
+    private lateinit var decrementButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,15 +26,19 @@ class CounterFragment : Fragment() {
 
         counterText = view.findViewById(R.id.counter_text)
         incrementButton = view.findViewById(R.id.button_increment)
+        decrementButton = view.findViewById(R.id.button_decrement)
 
-        // Восстанавливаем значение счетчика после пересоздания фрагмента
         savedInstanceState?.let {
             counter = it.getInt("counter_value", 0)
         }
         counterText.text = counter.toString()
 
         incrementButton.setOnClickListener {
-            counter++
+            counter+=5
+            counterText.text = counter.toString()
+        }
+        decrementButton.setOnClickListener {
+            counter-=1
             counterText.text = counter.toString()
         }
     }

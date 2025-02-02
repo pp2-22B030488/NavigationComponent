@@ -8,4 +8,9 @@
         android:id="@+id/nav_other"
         android:icon="@drawable/ic_home"
         android:title="Other" />
+    <item
+        android:id="@+id/nav_list"
+        android:icon="@drawable/ic_profile"
+        android:title="List" />
+
 </menu>
